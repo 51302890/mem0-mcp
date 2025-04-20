@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - MEM0_API_KEY=your_api_key_here  # 替换为您的实际 API 密钥
+    volumes:
+      - .:/app
